@@ -1,6 +1,317 @@
-@media (max-width: 600px)
-.carousel-caption
-    {
-        right: 20%;
-        left: 0%;
+
+
+.ticker-style {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+    margin: 18px 0 54px;
+    padding: 18px;
+    position: relative;
+    text-align: center;
+}
+
+.ticker-style:before {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: #b31b1b;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 100%;
+    height: 3px;
+    padding: 0 1px;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker-style {
+        width: 42.30769%;
+        float: right;
+        margin-right: 0;
+        border-top-width: 4px;
+        padding: 24px 12px 18px;
     }
+}
+
+@media (min-width: 60em) {
+    .ticker-style {
+        width: 42.30769%;
+        float: right;
+        margin-right: 0;
+        border-top-width: 4px;
+        padding: 24px 12px 18px;
+    }
+}
+
+.lt-ie9 .ticker-style {
+    width: 42.30769%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -2em;
+    display: inline;
+    border-top-width: 4px;
+    padding: 24px 12px 18px;
+}
+
+.ticker-title {
+    font-family: "freight-text-pro-n4","freight-text-pro",serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #b31b1b;
+    font-size: 26px;
+    margin: 12px 0 42px;
+}
+
+.ticker {
+    margin: 18px 0 54px;
+    padding: 18px;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker {
+        border-bottom: none;
+        margin: -100px 0 0;
+        z-index: 100;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker {
+        border-bottom: none;
+        margin: -100px 0 0;
+        z-index: 100;
+    }
+}
+
+.lt-ie9 .ticker {
+    border-bottom: none;
+    margin: -100px 0 0;
+    z-index: 100;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker {
+        width: 40%;
+        float: right;
+        margin-right: 0;
+        min-height: 980px;
+        padding: 24px 18px 120px;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker {
+        width: 31.42857%;
+        float: right;
+        margin-right: 0;
+        padding: 24px 54px 72px;
+        min-height: 860px;
+    }
+}
+
+.lt-ie9 .ticker {
+    width: 31.42857%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -2em;
+    display: inline;
+    padding: 24px 54px 72px;
+    min-height: 860px;
+}
+
+.ticker .ticker-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker .ticker-title {
+        font-size: 22px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker .ticker-title {
+        font-size: 26px;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.lt-ie9 .ticker .ticker-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.ticker .ticker-title:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #e0e0e0;
+    content: "";
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.ticker-entry,.ticker-links {
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker-entry,.ticker-links {
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker-entry,.ticker-links {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.lt-ie9 .ticker-entry,.lt-ie9 .ticker-links {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.ticker-entry img,.ticker-links img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 18px;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker-entry img,.ticker-links img {
+        margin-bottom: 24px;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker-entry img,.ticker-links img {
+        margin-bottom: 24px;
+    }
+}
+
+.lt-ie9 .ticker-entry img,.lt-ie9 .ticker-links img {
+    margin-bottom: 24px;
+}
+
+.ticker-entry:after,.ticker-links:after {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    background-color: #e0e0e0;
+    content: "";
+    height: 1px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+}
+
+.ticker-entry.last,.ticker-links.last {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ticker-entry.last:after,.ticker-links.last:after {
+    display: none;
+}
+
+.ticker-entry .tag {
+    color: #b31b1b;
+    font-size: 12px;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    .ticker-entry .tag {
+        margin-bottom: 4px;
+    }
+}
+
+@media (min-width: 60em) {
+    .ticker-entry .tag {
+        margin-bottom: 3px;
+    }
+}
+
+.lt-ie9 .ticker-entry .tag {
+    margin-bottom: 3px;
+}
+
+a.ticker-entry-title {
+    font-family: "freight-text-pro-n4","freight-text-pro",serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #000;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+@media (min-width: 36em) and (max-width: 60em) {
+    a.ticker-entry-title {
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 60em) {
+    a.ticker-entry-title {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+}
+
+.lt-ie9 a.ticker-entry-title {
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.ticker-links a {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    line-height: 1;
+    padding: 0 5px 0 9px;
+}
+
+.ticker-links.inline a {
+    border-left: 1px solid #e0e0e0;
+}
+
+.ticker-links.inline a:first-child {
+    padding-left: 5px;
+    border: none;
+}
+.ticker-entry .tag {
+    font-family: 'Montserrat', sans-serif;
+    color: #3a539b;
+    font-size: 14px;
+}
+a.ticker-entry-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+.ticker-style:before {
+    background-color: #3a539b;
+}
