@@ -11,23 +11,27 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/material-kit.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-    <!--Google Font-->
+    <!--Google Web Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
-        .navbar, .navbar.navbar-default{background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px;}
-        .navbar .navbar-brand{padding: 0px 10px;}
-        .carousel-caption{font-family: 'Montserrat', sans-serif; left: 8%; font-size: 60px; text-align: left; text-shadow: none; line-height: 100%;}
+         body {font-family: 'Montserrat', sans-serif; font-size: 12px;}
+        .navbar, .navbar.navbar-default {background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px;}
+        .navbar .navbar-brand {padding: 0px 10px;}
+        .carousel-caption {font-family: 'Montserrat', sans-serif; left: 8%; font-size: 60px; text-align: left; text-shadow: none; line-height: 100%;}
          img {height:100%; width:auto;}
-        .carousel-inner{width: 100%;}
-        .navbar{margin-bottom: 0px;}
-        .nav{padding-left: 30px;}
+        .carousel-inner {width: 100%;}
+        .navbar {margin-bottom: 0px;}
+        .nav {padding-left: 30px;}
         .row {margin-left: -20px;}
         .container-fluid {padding-left: 20px;}
         .a:hover, a:focus:focus {color: #FFFFFF;}
         .dropdown-toggle::after {content: none;}
         .carousel .carousel-caption {padding-bottom: 50px;}
+        .alert.alert-info {border-radius: 0px; margin-bottom: -1px; border: 0; background-color: #71787d;}
+        .close {color: #fff; text-decoration: none; cursor: pointer; opacity: inherit;}
         @media (max-width: 767px)
         {
         .carousel-caption
@@ -55,6 +59,18 @@
 
 </head>
   <body>
+      <div class="alert alert-info">
+    <div class="container-fluid">
+	  <div class="alert-icon">
+		<i class="material-icons">info_outline</i>
+	  </div>
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true"><i class="material-icons">keyboard_arrow_up</i>
+	  </button>
+	  <b>Info alert:</b> AN EXAMPLE ALERT!
+    </div>
+</div>
+
       <!--Navbar-->
       <nav class="navbar navbar-default" role="navigation">
           <div class="container-fluid">
@@ -146,5 +162,16 @@
     <script type='text/javascript' src="assets/js/material-kit.js"></script>
     <script type='text/javascript' src="assets/js/material.min.js"></script>
     <script type='text/javascript' src="assets/js/nouislider.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+  $(document).ready(function() {
+  		 $("#myCarousel").swiperight(function() {
+    		  $(this).carousel('prev');
+	    		});
+		   $("#myCarousel").swipeleft(function() {
+		      $(this).carousel('next');
+	   });
+	});
+</script>
   </body>
 </html>
