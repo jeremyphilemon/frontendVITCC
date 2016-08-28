@@ -16,23 +16,41 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
     <style>
-        .navbar, .navbar.navbar-default
-        {
-            background-color: #3A539B;
-            font-family: 'Montserrat', sans-serif;
-            border-radius: 0px;
-        }
-        .navbar .navbar-brand
-        {
-            padding: 0px 10px;
-        }
-        .carousel-caption{font-family: 'Montserrat', sans-serif; font-size: 60px; text-align: left;}
-        img { height:100%; width:auto; }
+        .navbar, .navbar.navbar-default{background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px;}
+        .navbar .navbar-brand{padding: 0px 10px;}
+        .carousel-caption{font-family: 'Montserrat', sans-serif; left: 8%; font-size: 60px; text-align: left; text-shadow: none; line-height: 100%;}
+         img {height:100%; width:auto;}
         .carousel-inner{width: 100%;}
-        .navbar {margin-bottom: 0px;}
+        .navbar{margin-bottom: 0px;}
+        .nav{padding-left: 30px;}
         .row {margin-left: -20px;}
         .container-fluid {padding-left: 20px;}
         .a:hover, a:focus:focus {color: #FFFFFF;}
+        .dropdown-toggle::after {content: none;}
+        .carousel .carousel-caption {padding-bottom: 50px;}
+        @media (max-width: 767px)
+        {
+        .carousel-caption
+            {
+                font-size: 35px;
+                left: 5%;
+            }
+        .logo
+            {
+                width: auto;
+                display: block;
+                margin: auto;
+                padding-left: 23px;
+            }
+        }
+        @media (max-width: 500px)
+        {
+            .carousel-caption
+                {
+                    font-size: 20px;
+                    left: 5%;
+                }
+        }
     </style>
 
 </head>
@@ -47,7 +65,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a href="#" class="navbar-left"><img alt="Brand" src="logo2.png" class="img-responsive"></a>
+                  <a href="#" class="navbar-left"><img alt="Brand" src="logo_short.png" class="logo"></a>
               </div>
 
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -70,6 +88,7 @@
               </div>
           </div>
       </nav> <!--navbar-->
+      <!--Carousel-->
       <div class="container-fluid">
           <div class="row">
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -85,7 +104,7 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <img src="assets/img/VIT.png" alt="Chania">
-                  <div class="carousel-caption">Plant disease clinic <br>identifies new case of <br>oak wilt</div>
+                  <div class="carousel-caption">Plant disease clinic identifies new case of oak wilt</div>
                 </div>
 
                 <div class="item">
