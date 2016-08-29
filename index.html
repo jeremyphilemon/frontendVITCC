@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Home</title>
-
+    <link rel="icon" type="image/png" href="favicons.png" />
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/material-kit.css" rel="stylesheet">
@@ -19,7 +19,7 @@
 
     <style>
          body {font-family: 'Montserrat', sans-serif; font-size: 12px; padding-top: 64px;}
-        .navbar, .navbar.navbar-default {background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px;}
+        .navbar, .navbar.navbar-default {background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px; box-shadow:none}
         .navbar .navbar-brand {padding: 0px 10px;}
         .carousel-caption {font-family: 'Montserrat', sans-serif; left: 8%; font-size: 60px; text-align: left; text-shadow: none; line-height: 100%;}
          img {height:100%; width:auto;}
@@ -32,33 +32,25 @@
         .a:hover, a:focus:focus {color: #FFFFFF;}
         .dropdown-toggle::after {content: none;}
         .carousel .carousel-caption {padding-bottom: 50px;}
-        .alert.alert-info {border-radius: 0px; margin-bottom: -1px; border: 0; background-color: #71787d; line-height: 21px; margin-bottom: -4px;}
+        .alert.alert-info {border-radius: 0px; margin-bottom: -1px; border: 0; background-color: #2C3E50; line-height: 21px; margin-bottom: -4px;}
         .close {color: #fff; text-decoration: none; cursor: pointer; opacity: inherit;}
         .ticker {min-height: 680px;}
-        #map {height: 50%; width: 100%;}
+        .footer .contact {text-align: right; margin: -35px 0 0;}
+        .footer .tag {font-size: 13px; font-weight: 100;}
+        .footer .container-fluid {height: 150px; background-color: #3A539B; color: #ffffff; font-size: 14px; text-align: center;}
+         #map {height: 50%; width: 100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
         {
-        .carousel-caption
-            {
-                font-size: 35px;
-                left: 5%;
-            }
-        .logo
-            {
-                width: auto;
-                display: block;
-                margin: auto;
-                padding-left: 23px;
-            }
+        .carousel-caption {font-size: 35px; left: 5%;}
+        .logo {width: auto; display: block; margin: auto;  padding-left: 32px;}
+        .footer .contact {text-align: center; margin:0px 0 0; padding-top: 6px;}
+        .footer .container-fluid {height: 163px;}
+         hr {margin-top: -1rem;}
         }
         @media (max-width: 500px)
         {
-            .carousel-caption
-                {
-                    font-size: 20px;
-                    left: 5%;
-                }
+        .carousel-caption {font-size: 20px; left: 5%;}
         }
     </style>
 
@@ -175,10 +167,21 @@
         			</div>
             </div>
        </div>
+       <!--footer-->
+       <div class="footer">
+           <div class="container-fluid">
+                   <br>
+                   <img src="facebook.png" style="height: 50px;">
+                   <img src="twitter.png" style="height: 50px;">
+                   <img src="instagram.png" style="height: 50px;">
+                   <div class="contact"><div class="tag">CONTACT</div>|<div class="tag">MADE WITH <a href="#" class="open" style="font-size: 14px;"><img src="Heart.svg"></a> BY THE WEB TEAM</div></div>
+                   <br><hr>
+                   <div class="tag">COPYRIGHT&copy; VIT UNIVERSITY</div>
+           </div>
+       </div>
       <!--Maps-->
       <div class="container-fluid"
       <div id="map" style="position: absolute;"></div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

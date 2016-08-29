@@ -315,3 +315,4 @@ a.ticker-entry-title {
 .ticker-style:before {
     background-color: #3a539b;
 }
+.navbar .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:focus{background-color: #3a539b}
