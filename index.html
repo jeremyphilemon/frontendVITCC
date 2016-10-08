@@ -11,6 +11,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/material-kit.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!--Google Web Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -38,6 +39,14 @@
         .footer .contact {text-align: right; margin: -35px 0 0;}
         .footer .tag {font-size: 13px; font-weight: 100;}
         .footer .container-fluid {height: 150px; background-color: #2a3761; color: #ffffff; font-size: 14px; text-align: center;}
+        .tl {width: 69%; height: 36%;}
+        .tl .container-fluid {padding-left: 0px;}
+        .cd-horizontal-timeline .events-content h2 {font-size: 15px; font-family: 'Montserrat', sans-serif;}
+        .cd-horizontal-timeline .events-content p {font-size: 10px;}
+        .cd-horizontal-timeline .events a {font-size: 15px;}
+        .cd-horizontal-timeline .events-wrapper::before {background-image: none;}
+        .cd-horizontal-timeline .events-wrapper::after {background-image: none;}
+        .maps .container-fluid {padding-left: 0px;}
          #map {height: 50%; width: 100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
@@ -51,6 +60,7 @@
         @media (max-width: 500px)
         {
         .carousel-caption {font-size: 20px; left: 5%;}
+        .tl {width: auto; height: 36%;}
         }
     </style>
 
@@ -100,7 +110,8 @@
                   </ul>
               </div>
           </div>
-      </nav> <!--navbar-->
+      </nav>
+
       <!--Carousel-->
       <div class="container-fluid">
           <div class="row">
@@ -145,13 +156,8 @@
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
-       </div>
-       </div>
           </div>
-      </div>
-      </div>
-
-      <div class="container">
+       </div>
       </div>
 
       <!--News Ticker-->
@@ -171,7 +177,134 @@
             				<a class="ticker-entry-title" href=""><br>Headlines</a>
             			</div>
                 </div>
-           </div>
+
+
+           <div class="tl">
+           <div class="container-fluid">
+                 <section class="cd-horizontal-timeline">
+                 	<div class="timeline">
+                 		<div class="events-wrapper">
+                 			<div class="events">
+                 				<ol>
+                 					<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                 					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                 					<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                 					<li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                 					<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                 					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                 					<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                 					<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                 					<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                 					<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                 					<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                 				</ol>
+
+                 				<span class="filling-line" aria-hidden="true"></span>
+                 			</div> <!-- .events -->
+                 		</div> <!-- .events-wrapper -->
+
+                 		<ul class="cd-timeline-navigation">
+                 			<li><a href="#0" class="prev inactive">Prev</a></li>
+                 			<li><a href="#0" class="next">Next</a></li>
+                 		</ul> <!-- .cd-timeline-navigation -->
+                 	</div> <!-- .timeline -->
+
+                 	<div class="events-content">
+                 		<ol>
+                 			<li class="selected" data-date="16/01/2014">
+                 				<h2>Horizontal Timeline</h2>
+                 				<em>January 16th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="28/02/2014">
+                 				<h2>Event title here</h2>
+                 				<em>February 28th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="20/04/2014">
+                 				<h2>Event title here</h2>
+                 				<em>March 20th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="20/05/2014">
+                 				<h2>Event title here</h2>
+                 				<em>May 20th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="09/07/2014">
+                 				<h2>Event title here</h2>
+                 				<em>July 9th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="30/08/2014">
+                 				<h2>Event title here</h2>
+                 				<em>August 30th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="15/09/2014">
+                 				<h2>Event title here</h2>
+                 				<em>September 15th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="01/11/2014">
+                 				<h2>Event title here</h2>
+                 				<em>November 1st, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="10/12/2014">
+                 				<h2>Event title here</h2>
+                 				<em>December 10th, 2014</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="19/01/2015">
+                 				<h2>Event title here</h2>
+                 				<em>January 19th, 2015</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+
+                 			<li data-date="03/03/2015">
+                 				<h2>Event title here</h2>
+                 				<em>March 3rd, 2015</em>
+                 				<p>
+                 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                 				</p>
+                 			</li>
+                 		</ol>
+                 	</div> <!-- .events-content -->
+                 </section>
+             </div>
+             </div>
+         </div>
+
       <!--footer-->
       <div class="footer">
            <div class="container-fluid">
@@ -184,19 +317,23 @@
                    <div class="tag">COPYRIGHT&copy; VIT UNIVERSITY</div>
            </div>
        </div>
+
       <!--Maps-->
-      <div class="container-fluid"
+      <div class="maps">
+      <div class="container-fluid">
       <div id="map" style="position: absolute;"></div>
+      </div>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type='text/javascript' src="assets/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="assets/js/bootstrap-datepicker.js"></script>
-    <script type='text/javascript' src="assets/js/jquery.min.js"></script>
     <script type='text/javascript' src="assets/js/material-kit.js"></script>
     <script type='text/javascript' src="assets/js/material.min.js"></script>
     <script type='text/javascript' src="assets/js/nouislider.min.js"></script>
+    <script type='text/javascript' src="assets/js/main.js"></script>
     <script type='text/javascript' async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiwfjM25CWM-ieGhMbcLLlzIPLa9c8KYk&callback=initMap"></script>
