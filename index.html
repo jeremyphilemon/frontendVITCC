@@ -24,12 +24,15 @@
         .navbar .navbar-brand {padding: 0px 10px;}
         .carousel-caption {font-family: 'Montserrat', sans-serif; left: 8%; font-size: 60px; text-align: left; text-shadow: none; line-height: 100%;}
          img {height:100%; width:auto;}
+         a {text-decoration: none; }
+         a:hover {text-decoration:none;}
         .carousel-inner {width: 100%;}
         .navbar {margin-bottom: 0px;}
         .nav {padding-left: 0px;}
         .row {margin-left: -20px; padding-top: 2px;}
         .logo {height: 50px;}
         .container-fluid {padding-left: 20px;}
+        .tag {font-weight: inherit;}
         .a:hover, a:focus:focus {color: #FFFFFF;}
         .dropdown-toggle::after {content: none;}
         .carousel .carousel-caption {padding-bottom: 50px;}
@@ -42,13 +45,15 @@
         .footer .container-fluid {height: 150px; background-color: #2a3761; color: #ffffff; font-size: 14px; text-align: center;}
         .tl {width: 69%; height: 36%; margin-top: -30px;}
         .tl .container-fluid {padding-left: 0px;}
-        .cd-horizontal-timeline .events-content h2 {font-size: 15px; font-family: 'Montserrat', sans-serif;}
+        .cd-horizontal-timeline .events-content h2 {font-size: 15px; font-family: 'Montserrat', sans-serif; font-weight: inherit;}
         .cd-horizontal-timeline .events-content p {font-size: 10px;}
         .cd-horizontal-timeline .events a {font-size: 15px;}
         .cd-horizontal-timeline .events-wrapper::before {background-image: none;}
         .cd-horizontal-timeline .events-wrapper::after {background-image: none;}
         .maps .container-fluid {padding-left: 0px;}
         .cd-horizontal-timeline .filling-line {background-color: #3a539b;}
+        .cd-horizontal-timeline .events-content em { font-size: 14px;}
+        .cd-horizontal-timeline .events-content {margin: -2em 0;}
          #map {height: 50%; width: 100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
@@ -127,7 +132,12 @@
         }
         @media (max-width: 576px)
         {
-            .tl {width: 105%;;}
+            .tl {width: 105%;}
+        }
+        @media (min-width:576px)
+        {
+            .cd-horizontal-timeline .events-content p {font-size: 15px;}
+            .cd-horizontal-timeline .events-content h2 {font-size: 24px;}
         }
     </style>
 
