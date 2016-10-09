@@ -36,10 +36,11 @@
         .alert.alert-info {border-radius: 0px; margin-bottom: -1px; border: 0; background-color: #2C3E50; line-height: 21px; margin-bottom: -4px;}
         .close {color: #fff; text-decoration: none; cursor: pointer; opacity: inherit;}
         .ticker {min-height: 680px;}
+        .container {margin-left: 0px;}
         .footer .contact {text-align: right; margin: -35px 0 0;}
         .footer .tag {font-size: 13px; font-weight: 100;}
         .footer .container-fluid {height: 150px; background-color: #2a3761; color: #ffffff; font-size: 14px; text-align: center;}
-        .tl {width: 69%; height: 36%;}
+        .tl {width: 69%; height: 36%; margin-top: -30px;}
         .tl .container-fluid {padding-left: 0px;}
         .cd-horizontal-timeline .events-content h2 {font-size: 15px; font-family: 'Montserrat', sans-serif;}
         .cd-horizontal-timeline .events-content p {font-size: 10px;}
@@ -47,6 +48,7 @@
         .cd-horizontal-timeline .events-wrapper::before {background-image: none;}
         .cd-horizontal-timeline .events-wrapper::after {background-image: none;}
         .maps .container-fluid {padding-left: 0px;}
+        .cd-horizontal-timeline .filling-line {background-color: #3a539b;}
          #map {height: 50%; width: 100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
@@ -56,11 +58,76 @@
         .footer .contact {text-align: center; margin:0px 0 0; padding-top: 6px;}
         .footer .container-fluid {height: 163px;}
          hr {margin-top: -1rem;}
+        .tl {width: auto; height: 36%; width: 61%}
+        }
+        @media (min-width: 1100px)
+        {
+            .ticker {margin-right: -100px;}
+            .tl {    width: 78%;height: 36%; margin-top: -69px;}
+        }
+        @media (max-width: 991px) and (min-width: 915px)
+        {
+            .ticker {width: 43%; margin-right: -170px;}
+            .tl {width: 83%;}
+        }
+        @media (max-width: 914px) and (min-width: 890px)
+        {
+            .ticker {width: 44%; margin-right: -145px; margin-top: -50px;}
+            .tl {width: 79%;}
+        }
+        @media (max-width: 889px) and (min-width: 840px)
+        {
+            .ticker {width: 41%; margin-right: -100px; margin-top: -50px;}
+            .tl {width: 75%;}
+        }
+        @media (max-width: 839px) and (min-width: 805px)
+        {
+            .ticker {width: 42%; margin-right: -65px; margin-top: -50px;}
+        }
+        @media (max-width: 804px) and (min-width: 790px)
+        {
+            .ticker {width: 42%; margin-right: -65px; margin-top: -50px;}
+        }
+        @media (max-width: 789px) and (min-width: 768px)
+        {
+            .ticker {width: 42%; margin-right: -61px; margin-top: -50px;}
+        }
+        @media (max-width: 767px) and (min-width: 730px)
+        {
+            .ticker {width: 42%; margin-right: -150px; margin-top: -30px;}
+            .tl {width: 88%;}
+        }
+        @media (max-width: 729px) and (min-width: 700px)
+        {
+            .ticker {width: 42%; margin-right: -100px; margin-top: -30px;}
+            .tl {width: 79%;}
+        }
+        @media (max-width: 699px) and (min-width: 650px)
+        {
+            .ticker {width: 42%; margin-right: -81px; margin-top: -30px;}
+            .tl {width: 70%;}
+        }
+        @media (max-width: 649px) and (min-width: 620px)
+        {
+            .ticker {width: 42%; margin-right: -54px; margin-top: -30px;}
+            .tl {width: 70%;}
+        }
+        @media (max-width: 619px) and (min-width: 600px)
+        {
+            .ticker {width: 42%; margin-right: -2px; margin-top: -30px;}
+        }
+        @media (max-width: 599px) and (min-width: 576px)
+        {
+            .ticker {width: 42%; margin-right: 0px; margin-top: -30px;}
+            .tl {width: 60%;}
         }
         @media (max-width: 500px)
         {
         .carousel-caption {font-size: 20px; left: 5%;}
-        .tl {width: auto; height: 36%;}
+        }
+        @media (max-width: 576px)
+        {
+            .tl {width: 105%;;}
         }
     </style>
 
