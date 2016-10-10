@@ -589,12 +589,18 @@
     		      $(this).carousel('next');
     	   });
        });
-                $("#myCarousel").carousel();
-                $(".item").click(function(){
-                    $("#myCarousel").carousel(1);
-                $(".left").click(function(){
-                    $("#myCarousel").carousel("prev");
-                });
+                   // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item").click(function(){
+                $("#myCarousel").carousel(1);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function(){
+                $("#myCarousel").carousel("prev");
+            });
    </script>
   </body>
 </html>
