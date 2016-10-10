@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
+         html {overflow-x:hidden}
          body {font-family: 'Montserrat', sans-serif; font-size: 12px; padding-top: 64px; overflow-x: hidden;}
         .navbar, .navbar.navbar-default {background-color: #3A539B; font-family: 'Montserrat', sans-serif; border-radius: 0px; box-shadow:none}
         .navbar .navbar-brand {padding: 0px 10px;}
@@ -57,7 +58,12 @@
         .cd-horizontal-timeline .events-content {margin: -1em 0;}
         .cd-horizontal-timeline .events-content p {font-size: 15px;}
         .cd-slider-wrapper {height: 389px;}
-         #map {height: 50%; width: 100%;}
+        .enterprise{width:100%;}
+        .carousel-inner .item img
+        {
+            width: 100%;
+        }
+         #map {height: 50%; width: 1100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
         {
@@ -67,6 +73,10 @@
         .footer .container-fluid {height: 163px;}
          hr {margin-top: -1rem;}
         .tl {width: auto; height: 36%; width: 61%}
+        }
+        @media (min-width: 1366px)
+        {
+            .vulcan{width: 1366px; margin: 0 auto;}
         }
         @media (min-width: 900px)
         {
@@ -267,11 +277,13 @@
                             <li><a href="#">One more separated link</a></li>
                           </ul>
                       </li>
+                      <li><a href="https://academicscc.vit.ac.in/student/"><i class="material-icons">assignment_ind</i>Student Login</a></li>
                   </ul>
               </div>
           </div>
       </nav>
 
+<div class="enterprise">
       <!--Carousel-->
       <div class="container-fluid">
           <div class="row">
@@ -288,22 +300,22 @@
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
                   <img src="assets/img/tower.png" alt="tower">
-                  <div class="carousel-caption">Plant disease clinic identifies new case of oak wilt</div>
+                  <div class="carousel-caption">Cu quo doming dicut neglegentur, vix discere temporibus ne.</div>
                 </div>
 
                 <div class="item">
                   <img src="assets/img/art.png" alt="art">
-                  <div class="carousel-caption">Heyy</div>
+                  <div class="carousel-caption">Cu quo doming dicut neglegentur, vix discere temporibus ne.</div>
                 </div>
 
                 <div class="item">
                   <img src="assets/img/vitmun.png" alt="vitmun">
-                  <div class="carousel-caption">Heyy</div>
+                  <div class="carousel-caption">Cu quo doming dicut neglegentur, vix discere temporibus ne.</div>
                 </div>
 
                 <div class="item">
                   <img src="assets/img/vitmun2.png" alt="vitmun2">
-                  <div class="carousel-caption">Heyy</div>
+                  <div class="carousel-caption">Cu quo doming dicut neglegentur, vix discere temporibus ne.</div>
                 </div>
               </div>
 
@@ -319,7 +331,9 @@
           </div>
        </div>
       </div>
+  </div>
 
+  <div class="vulcan">
       <!--News Ticker-->
       <div class="container">
            <div class="ticker-style ticker">
@@ -472,7 +486,7 @@
 
    				<div class="cd-half-block content">
    					<div>
-   						<h2>Pointy Slider</h2>
+   						<h2>Grid slider</h2>
    						<p>
    							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
    						</p>
@@ -487,7 +501,7 @@
    					<div>
    						<h2>Slide Number 2</h2>
    						<p>
-   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
    						</p>
    					</div>
    				</div> <!-- .cd-half-block.content -->
@@ -500,7 +514,7 @@
    					<div>
    						<h2>Slide Number 3</h2>
    						<p>
-   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
    						</p>
    					</div>
    				</div> <!-- .cd-half-block.content -->
@@ -513,7 +527,7 @@
    					<div>
    						<h2>Slide Number 4</h2>
    						<p>
-   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
    						</p>
    					</div>
    				</div> <!-- .cd-half-block.content -->
@@ -521,6 +535,7 @@
    		</ul> <!-- .cd-slider -->
    	</div> <!-- .cd-slider-wrapper -->
 </div></div>
+</div>
 
       <!--footer-->
       <div class="footer">
