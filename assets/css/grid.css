@@ -91,7 +91,7 @@ Slider
   background-color: #ccd0c1;
 }
 .cd-slider li:nth-of-type(3) .content {
-  background-color: #f3b96c;
+  background-color: #2a3761;
 }
 .cd-slider li:nth-of-type(4) .content {
   background-color: #f46c6a;
@@ -276,6 +276,6 @@ Slider Navigation
   }
   .cd-slider-navigation li.selected a {
     background-color: transparent;
-    color: #f3b96c;
+    color: #2a3761;
   }
 }
