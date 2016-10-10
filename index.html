@@ -12,6 +12,7 @@
     <link href="assets/css/material-kit.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
     <link href="assets/css/timeline.css" rel="stylesheet">
+    <link href="assets/css/grid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
     <!--Google Web Font-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -43,7 +44,7 @@
         .footer .contact {text-align: right; margin: -35px 0 0;}
         .footer .tag {font-size: 13px; font-weight: 100;}
         .footer .container-fluid {height: 150px; background-color: #2a3761; color: #ffffff; font-size: 14px; text-align: center;}
-        .tl {width: 69%; height: 36%; margin-top: -30px;}
+        .tl {width: 69%; height: 350px; margin-top: -30px;}
         .tl .container-fluid {padding-left: 0px;}
         .cd-horizontal-timeline .events-content h2 {font-size: 15px; font-family: 'Montserrat', sans-serif; font-weight: inherit;}
         .cd-horizontal-timeline .events-content p {font-size: 10px;}
@@ -53,7 +54,9 @@
         .maps .container-fluid {padding-left: 0px;}
         .cd-horizontal-timeline .filling-line {background-color: #3a539b;}
         .cd-horizontal-timeline .events-content em { font-size: 14px;}
-        .cd-horizontal-timeline .events-content {margin: -2em 0;}
+        .cd-horizontal-timeline .events-content {margin: -1em 0;}
+        .cd-horizontal-timeline .events-content p {font-size: 15px;}
+        .cd-slider-wrapper {height: 389px;}
          #map {height: 50%; width: 100%;}
          footer {background-color: #3a539b;}
         @media (max-width: 767px)
@@ -65,66 +68,132 @@
          hr {margin-top: -1rem;}
         .tl {width: auto; height: 36%; width: 61%}
         }
+        @media (min-width: 900px)
+        {
+            .cd-slider h2 {font-size: 2.5rem;}
+            .cd-slider p {font-size: 20px; font-family: 'Montserrat', sans-serif;}
+        }
+        @media (max-width: 1199px)
+        {
+            .cd-slider-wrapper {height: 483px;}
+        }
+        @media (max-width: 1100px)
+        {
+            .cd-slider-wrapper {height: 444px;}
+        }
         @media (min-width: 1100px)
         {
             .ticker {margin-right: -100px;}
-            .tl {    width: 78%;height: 36%; margin-top: -69px;}
+            .tl {    width: 78%;height: 350px; margin-top: -69px;}
+        }
+        @media (min-width: 1200px)
+        {
+            .grid { width: 78%;}
+        }
+        @media (min-width: 991px) and (max-width: 1199px)
+        {
+            .grid{width: 79%;}
+        }
+        @media (min-width: 990px) and (max-width: 1100px)
+        {
+            .grid {width: 69%;}
         }
         @media (max-width: 991px) and (min-width: 915px)
         {
             .ticker {width: 43%; margin-right: -170px;}
             .tl {width: 83%;}
         }
+        @media (max-width: 991px) and (min-width: 960px)
+        {
+            .grid {width: 82%;}
+            .cd-slider-wrapper {height: 408px;}
+        }
+        @media (max-width: 959px) and (min-width: 915px)
+        {
+            .cd-slider-wrapper {height: 322px;}
+            .grid{width:82%;}
+        }
         @media (max-width: 914px) and (min-width: 890px)
         {
             .ticker {width: 44%; margin-right: -145px; margin-top: -50px;}
             .tl {width: 79%;}
+            .cd-slider-wrapper {height: 342px;}
+            .grid {width: 76%;}
+            .cd-slider h2 {font-size: 23px; margin-top: -72px;}
+            .cd-slider p {font-size: 12px;}
         }
         @media (max-width: 889px) and (min-width: 840px)
         {
             .ticker {width: 41%; margin-right: -100px; margin-top: -50px;}
             .tl {width: 75%;}
+            .cd-slider-wrapper {height: 379px;}
+            .grid {width: 72%;}
         }
         @media (max-width: 839px) and (min-width: 805px)
         {
             .ticker {width: 42%; margin-right: -65px; margin-top: -50px;}
+            .grid {width: 67.5%; margin-top: 26px}
+            .cd-slider-wrapper {height: 366px;}
+            .cd-slider-navigation {left: 85%;}
         }
         @media (max-width: 804px) and (min-width: 790px)
         {
             .ticker {width: 42%; margin-right: -65px; margin-top: -50px;}
+            .grid {width: 67.5%;}
+            .cd-slider-wrapper {height: 358px; margin-top: 34px;}
+            .cd-slider-navigation { left: 87%; bottom: 5px;}
         }
         @media (max-width: 789px) and (min-width: 768px)
         {
             .ticker {width: 42%; margin-right: -61px; margin-top: -50px;}
+            .cd-slider-wrapper { height: 367px; margin-top: 25px;}
+            .grid {width: 67%;}
+            .cd-slider-navigation { left: 86%;}
         }
         @media (max-width: 767px) and (min-width: 730px)
         {
             .ticker {width: 42%; margin-right: -150px; margin-top: -30px;}
             .tl {width: 88%;}
+            .cd-slider-wrapper {height: 447px;}
+            .grid{width: 85.5%; margin-top: -448px;}
         }
         @media (max-width: 729px) and (min-width: 700px)
         {
             .ticker {width: 42%; margin-right: -100px; margin-top: -30px;}
             .tl {width: 79%;}
+            .grid {width: 76%;}
+            .cd-slider-wrapper {height: 415px; margin-top: -415px;}
         }
         @media (max-width: 699px) and (min-width: 650px)
         {
             .ticker {width: 42%; margin-right: -81px; margin-top: -30px;}
             .tl {width: 70%;}
+            .grid {width: 73%;}
+            .cd-slider-wrapper {height: 392px;margin-top: -392px;}
         }
         @media (max-width: 649px) and (min-width: 620px)
         {
             .ticker {width: 42%; margin-right: -54px; margin-top: -30px;}
             .tl {width: 70%;}
+            .cd-slider-wrapper {height: 394px; margin-top: -394px;}
+            .grid {width: 68%;}
+            .cd-slider-navigation { left: 84%; bottom: 8px;}
         }
         @media (max-width: 619px) and (min-width: 600px)
         {
             .ticker {width: 42%; margin-right: -2px; margin-top: -30px;}
+            .grid {width: 58%;}
+            .cd-slider-wrapper {height: 371px; margin-top: -371px;}
+            .cd-slider-navigation { left: 81%; bottom: -3px;}
+            .cd-slider p {font-size: 12px;}
         }
         @media (max-width: 599px) and (min-width: 576px)
         {
             .ticker {width: 42%; margin-right: 0px; margin-top: -30px;}
             .tl {width: 60%;}
+            .cd-slider-wrapper { height: 361px; margin-top: -361px;}
+            .grid {width: 58%;}
+            .cd-slider-navigation { left: 81%; bottom: -3px;}
         }
         @media (max-width: 500px)
         {
@@ -133,11 +202,25 @@
         @media (max-width: 576px)
         {
             .tl {width: 105%;}
+            .cd-slider p {font-size: 11px;}
+            .cd-slider h2, .cd-slider p {line-height: 1.4;}
+            .grid {padding-bottom: 42px;}
+            .ticker{min-height: 427px; margin: 18px 0 24px;}
+            .cd-horizontal-timeline .events-content p {font-size: 11px;}
         }
-        @media (min-width:576px)
+        @media (min-width:576px) and (max-width: 599px)
         {
             .cd-horizontal-timeline .events-content p {font-size: 15px;}
             .cd-horizontal-timeline .events-content h2 {font-size: 24px;}
+            .cd-slider p {font-size: 12px;}
+            .cd-slider h2 {font-size: 24px;}
+        }
+        @media (min-width:620px)
+        {
+            .cd-horizontal-timeline .events-content p {font-size: 15px;}
+            .cd-horizontal-timeline .events-content h2 {font-size: 24px;}
+            .cd-slider p {font-size: 15px;}
+            .cd-slider h2 {font-size: 24px;}
         }
     </style>
 
@@ -239,22 +322,21 @@
 
       <!--News Ticker-->
       <div class="container">
-                <div class="ticker-style ticker">
+           <div class="ticker-style ticker">
                   <h3 class="ticker-title">VIT News</h3>
             			<div class="ticker-entry">
             				<div class="tag">Category</div>
-            				<a class="ticker-entry-title" href=""><br>Headlines</a>
+            				<a class="ticker-entry-title" href=""><br>Lorem ipsum dolor sit amet, integre invenire honestatis nec ad, discere sensibus persequeris in est. Sed sententiae neglegentur ex, no oratio theophrastus mei.</a>
             			</div>
             			<div class="ticker-entry">
             				<div class="tag">Category</div>
-            				<a class="ticker-entry-title" href=""><br>Headlines</a>
+            				<a class="ticker-entry-title" href=""><br>Cu quo doming dicunt neglegentur, vix discere temporibus ne.</a>
             			</div>
             			<div class="ticker-entry">
             				<div class="tag">Category</div>
-            				<a class="ticker-entry-title" href=""><br>Headlines</a>
+            				<a class="ticker-entry-title" href=""><br>Id nobis labitur assueverit vis, probatus appellantur eu mel. Quo eu recusabo moderatius voluptatibus, eum aliquam rationibus eu. Vel ex verterem oportere assueverit. Tamquam ocurreret mea id, cu suas possit vulputate eam.</a>
             			</div>
                 </div>
-
 
            <div class="tl">
            <div class="container-fluid">
@@ -379,8 +461,66 @@
                  	</div> <!-- .events-content -->
                  </section>
              </div>
-             </div>
-         </div>
+           </div>
+
+
+       <div class="grid">
+       <div class="cd-slider-wrapper">
+   		<ul class="cd-slider">
+   			<li class="is-visible">
+   				<div class="cd-half-block image"></div>
+
+   				<div class="cd-half-block content">
+   					<div>
+   						<h2>Pointy Slider</h2>
+   						<p>
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae.
+   						</p>
+   					</div>
+   				</div>
+   			</li> <!-- .cd-half-block.content -->
+
+   			<li>
+   				<div class="cd-half-block image"></div>
+
+   				<div class="cd-half-block content light-bg">
+   					<div>
+   						<h2>Slide Number 2</h2>
+   						<p>
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   						</p>
+   					</div>
+   				</div> <!-- .cd-half-block.content -->
+   			</li>
+
+   			<li>
+   				<div class="cd-half-block image"></div>
+
+   				<div class="cd-half-block content">
+   					<div>
+   						<h2>Slide Number 3</h2>
+   						<p>
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   						</p>
+   					</div>
+   				</div> <!-- .cd-half-block.content -->
+   			</li>
+
+   			<li>
+   				<div class="cd-half-block image"></div>
+
+   				<div class="cd-half-block content">
+   					<div>
+   						<h2>Slide Number 4</h2>
+   						<p>
+   							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugit ullam voluptatum tenetur ab, non beatae, impedit dolorem itaque voluptates facilis necessitatibus suscipit dolor rerum dolores dignissimos alias facere sunt aliquid.
+   						</p>
+   					</div>
+   				</div> <!-- .cd-half-block.content -->
+   			</li>
+   		</ul> <!-- .cd-slider -->
+   	</div> <!-- .cd-slider-wrapper -->
+</div></div>
 
       <!--footer-->
       <div class="footer">
@@ -411,6 +551,7 @@
     <script type='text/javascript' src="assets/js/material.min.js"></script>
     <script type='text/javascript' src="assets/js/nouislider.min.js"></script>
     <script type='text/javascript' src="assets/js/main.js"></script>
+    <script type='text/javascript' src="assets/js/grid.js"></script>
     <script type='text/javascript' async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiwfjM25CWM-ieGhMbcLLlzIPLa9c8KYk&callback=initMap"></script>

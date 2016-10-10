@@ -261,7 +261,7 @@ a.ticker-entry-title {
     font-family: "freight-text-pro-n4","freight-text-pro",serif;
     font-style: normal;
     font-weight: 400;
-    color: #000;
+    color: #373a3c;
     font-size: 18px;
     line-height: 1.3;
 }
@@ -310,7 +310,7 @@ a.ticker-entry-title {
 }
 a.ticker-entry-title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
 }
 .ticker-style:before {
     background-color: #3a539b;
