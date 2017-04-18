@@ -1,5 +1,5 @@
 #A Concept for the VITCC Website.
 
-![Le Preview](http://anotherdudelike.me/vitalpha/VITAlpha.png)
+![Le Preview](http://jeremyphilemon.github.io/vitalpha/VITAlpha.png)
 
 
